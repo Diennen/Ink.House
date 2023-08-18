@@ -1,0 +1,33 @@
+@import "./index";
+
+html, body {
+	width: 100vw;
+   height: 100vh;
+	font-family: Raleway-M;
+	background: $main-color;
+	color: $blue-dark;
+	cursor: default;
+	overflow-x: hidden;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+[class*="__container"] {
+	max-width: 1150px;
+	margin: 0px auto;
+
+	@media (max-width: 1230px) {
+		padding: 0 40px;
+	}
+
+	@media (max-width: 576px) {
+		padding: 0 15px;
+	}
+}
+
+*:focus {
+	outline: none;
+}
