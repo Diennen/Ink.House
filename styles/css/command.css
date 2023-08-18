@@ -1,0 +1,88 @@
+.command {
+  padding: 70px 0;
+}
+.command__elements {
+  display: flex;
+  gap: 30px;
+}
+.command__text {
+  margin-top: 124px;
+}
+.command__text .command-title {
+  font-size: 40px;
+}
+.command__text .command-subtitle {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 150%;
+}
+.command__text .command__employees {
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+}
+.command__text .command__employees .command-employee {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 1110px) {
+  .command__elements {
+    flex-direction: column;
+    gap: 0;
+  }
+  .command__elements .command__text {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .command__elements .command__background img {
+    width: 510px;
+  }
+  .command__elements .command__text .command-title {
+    font-size: 30px;
+  }
+  .command__elements .command__text .command-subtitle {
+    margin-top: 30px;
+  }
+  .command__elements .command__text .command__employees {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .command {
+    padding: 50px 0;
+  }
+  .command__elements .command__background img {
+    width: 100%;
+  }
+  .command__elements .command__text {
+    margin-top: 30px;
+  }
+  .command__elements .command__text .command-title {
+    font-size: 24px;
+  }
+  .command__elements .command__text .command-subtitle {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .command__elements .command__text .command__employees {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .command {
+    padding: 60px 0 94px 0;
+  }
+  .command__elements .command__text .command-subtitle {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .command__elements .command__text .command__employees {
+    margin-top: 30px;
+    gap: 25px;
+  }
+}
